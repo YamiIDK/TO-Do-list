@@ -21,7 +21,7 @@ A simple task list application with dark mode, timer, and summary of completed a
 
 1. Clona el repositorio: (Clone the repository:)
     ```bash
-    git clone https://github.com/tu-usuario/to-do-list.git
+    git clone (https://github.com/YamiIDK/TO-Do-list)
     ```
 2. Abre el archivo `index.html` en tu navegador favorito. (Open the `index.html` file in your favorite browser.)
 
@@ -42,4 +42,4 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENS
 
 ## Autor (Author)
 
-- [Tu Nombre](https://github.com/tu-usuario) (Your Name)
+- [Cristian gallardo](https://github.com/YamiIDK) (Cristian Gallardo)
