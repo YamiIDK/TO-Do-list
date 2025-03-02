@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #007bb2;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+body.dark-mode .container {
+    background-color: #444444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+body.dark-mode #theme-toggle {
+    color: #ff9800;
+}
+
+/* Inputs and Buttons */
+#new-task-input, #add-task-button, #clear-list-button, #timer, #start-timer-button {
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007bb2;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+#add-task-button, #clear-list-button, #start-timer-button {
+    background-color: #007bb2;
+    color: #ffffff;
+    cursor: pointer;
+    width: calc(50% - 3px);
+    margin: 5px 0px 0px 0px;
+}
+
+body.dark-mode #new-task-input, 
+body.dark-mode #timer {
+    border: 1px solid #ff9800;
+}
+#timer {
+    width: calc(20% - 22px); /* Ancho inicial */
+    
+}
+
+
+body.dark-mode #add-task-button, 
+body.dark-mode #clear-list-button, 
+body.dark-mode #start-timer-button {
+    background-color: #ff9800;
+    border: 1px solid #ff9800;
+    color: #ffffff;
+}
+
+/* Task List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #007bb2;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.5s, border-color 0.5s;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #d32f2f;
+    cursor: pointer;
+}
+
+body.dark-mode li {
+    background-color: #555555;
+    border: 1px solid #ff9800;
+}
+
+body.dark-mode li button {
+    color: #ff6659;
+}
+
+/* Timer Display */
+#timer-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Summary Section */
+#summary {
+    margin-top: 20px;
+    display: none;
+}
+
+#summary h2 {
+    margin-bottom: 10px;
+}
+
+#summary h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    #new-task-input, #add-task-button, #clear-list-button, #timer, #start-timer-button {
+        width: calc(100% - 12px);
+        margin: 5px 0;
+        padding: 8px;
+    }
+
+    li {
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    #timer-display {
+        font-size: 1rem;
+    }
+}

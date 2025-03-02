@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tareas</h1>
+            <button id="theme-toggle">🌞</button>
+        </header>
+        <main>
+            <input type="text" id="new-task-input" placeholder="Agregar nueva tarea...">
+            <div class="button-container"> <!-- Contenedor para los botones -->
+                <button id="add-task-button">Agregar</button>
+                <button id="clear-list-button">Limpiar Lista</button>
+            </div>
+            <ul id="tasks-list"></ul>
+            <div>
+                <label for="timer">Temporizador (minutos):</label>
+                <input type="number" id="timer" min="1">
+                <button id="start-timer-button">Iniciar Temporizador</button>
+                <p id="timer-display"></p>
+            </div>
+            <div id="summary">
+                <h2>Resumen de Tareas</h2>
+                <h3>Completadas</h3>
+                <ul id="completed-tasks"></ul>
+                <h3>No Completadas</h3>
+                <ul id="incomplete-tasks"></ul>
+            </div>
+        </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
